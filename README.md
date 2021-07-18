@@ -1,6 +1,6 @@
 [![Instagram Unmuter Header](https://images2.imgbox.com/5c/8d/PEnF1brT_o.jpg)](https://github.com/Krb0/InstagramUnmuter)
 
-# Instagram Unmuter Chrome Extension
+# <img src="https://media.tenor.com/images/66881d83d109456dbdcd2271b7206d05/tenor.gif" width="30px"> Instagram Unmuter Chrome Extension <img src="https://media.tenor.com/images/66881d83d109456dbdcd2271b7206d05/tenor.gif" width="30px">
 
 It's an Chrome extension created because I got sick of having to unmute every story/post while I was using Instagram. 
 
