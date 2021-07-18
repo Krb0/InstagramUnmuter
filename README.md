@@ -1,0 +1,2 @@
+# InstagramUnmuter
+It's an Chrome extension at the beginning because got sick of having to unmute every story/post while I was using Instagram. It started being just a simple script that unmutes stories, but because of it having a good feedback when I posted it on Greasy Fork (https://greasyfork.org/es/scripts/417788-instagram-story-unmute-instagram-stories-unmuter-muted-instagram-story). Now it just became a chrome extension where I practice and add ideas.
