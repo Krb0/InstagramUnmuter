@@ -68,7 +68,7 @@ function main(sens,barColor, backColor, unmute){
     // main page instagram
     if(document.querySelector('.zGtbP.IPQK5.VideM'))
     {
-        document.querySelector('._lz6s.Hz2lF').style.background = barColor;
+        document.querySelector('._lz6s').style.background = barColor;
         document.querySelector('.zGtbP.IPQK5.VideM').style.background = backColor;
         document.querySelector('.zGtbP.IPQK5.VideM').style.border = "0";
         document.querySelector('.zGtbP.IPQK5.VideM').style.borderRadius = "8px";
@@ -82,12 +82,12 @@ function main(sens,barColor, backColor, unmute){
     }
     else if (document.querySelector('._2NzhO.EQ1Mr')){
         document.querySelector('.S-mcP').style.background = barColor;
-        document.querySelector('._lz6s.Hz2lF').style.background = barColor;
+        document.querySelector('._lz6s').style.background = barColor;
         document.querySelector('.Igw0E.IwRSH.eGOV_._4EzTm').style.background = backColor;
     }
-    else if (document.querySelector('._lz6s.Hz2lF') && document.querySelector('.SCxLW.o64aR ')){
+    else if (document.querySelector('._lz6s') && document.querySelector('.SCxLW.o64aR ')){
         document.querySelector('.SCxLW.o64aR ').style.background = backColor;
-        document.querySelector('._lz6s.Hz2lF').style.background = barColor;
+        document.querySelector('._lz6s').style.background = barColor;
     }
 },500);
 }
