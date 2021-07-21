@@ -64,7 +64,7 @@ function main(sens,barColor, backColor, unmute){
             document.querySelector(".aOOlW.HoLwm").click();
         }
     }
-    // main page instagram
+    // Main Page
     if(document.querySelector('.zGtbP.IPQK5.VideM'))
     {
         try{
@@ -82,6 +82,7 @@ function main(sens,barColor, backColor, unmute){
         }catch{}
         
     }
+    // Direct Messages Page
     else if (document.querySelector('._2NzhO.EQ1Mr')){
         try{
             document.querySelector('.S-mcP').style.background = barColor;
@@ -89,6 +90,7 @@ function main(sens,barColor, backColor, unmute){
             document.querySelector('.Igw0E.IwRSH.eGOV_._4EzTm').style.background = backColor;
         }catch{}
     }
+    // Explore & Profiles Page
     else if (document.querySelector('._lz6s') && document.querySelector('.SCxLW.o64aR ')){
         try{
             document.querySelector('.SCxLW.o64aR ').style.background = backColor;
