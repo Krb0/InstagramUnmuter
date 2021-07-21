@@ -25,13 +25,12 @@ function main(sens,barColor, backColor, unmute){
             if (unmute){
                 // If it doesn't have a Sensitive Content Warning..
                 if (document.querySelector('.aY6mA') == undefined){
-                    for (var i = 0; i <= languages.length; i++)
-                    {
-                        if ( document.querySelector(`svg._8-yf5[aria-label="${languages[i]}"]`) != null)
+                    languages.forEach( lang => {
+                        if ( document.querySelector(`svg._8-yf5[aria-label="${lang}"]`))
                         {
                             document.getElementsByClassName('FqZhB')[0].click();
                         }
-                    }
+                    });
                 }
                 // If it has a Sensitive Content Warning and client has enabled the skip warning feature..
                 else if (sens && document.querySelector('.sqdOP.yWX7d.y1rQx.cB_4K')){
@@ -68,26 +67,33 @@ function main(sens,barColor, backColor, unmute){
     // main page instagram
     if(document.querySelector('.zGtbP.IPQK5.VideM'))
     {
-        document.querySelector('._lz6s').style.background = barColor;
-        document.querySelector('.zGtbP.IPQK5.VideM').style.background = backColor;
-        document.querySelector('.zGtbP.IPQK5.VideM').style.border = "0";
-        document.querySelector('.zGtbP.IPQK5.VideM').style.borderRadius = "8px";
-        document.querySelector('.SCxLW.o64aR').style.background = backColor;
-        document.querySelector('._8UZ6e').style.background = "0"; 
-        document.querySelector('.tHaIX.Igw0E.IwRSH.eGOV_._4EzTm.HVWg4').style.background = "0";
-        document.querySelectorAll('.Ppjfr.UE9AK.wdOqh').forEach(elem => {
-            elem.style.background = barColor;
-            elem.style.borderRadius = "2px";
-        });
+        try{
+            document.querySelector('._lz6s').style.background = barColor;
+            document.querySelector('.zGtbP.IPQK5.VideM').style.background = backColor;
+            document.querySelector('.zGtbP.IPQK5.VideM').style.border = "none";
+            document.querySelector('.zGtbP.IPQK5.VideM').style.borderRadius = "8px";
+            document.querySelector('.SCxLW.o64aR').style.background = backColor;
+            document.querySelector('._8UZ6e').style.background = "none"; 
+            document.querySelector('.tHaIX.Igw0E.IwRSH.eGOV_._4EzTm.HVWg4').style.background = "none";
+            document.querySelectorAll('.Ppjfr.UE9AK.wdOqh').forEach(elem => {
+                elem.style.background = barColor;
+                elem.style.borderRadius = "2px";
+            });
+        }catch{}
+        
     }
     else if (document.querySelector('._2NzhO.EQ1Mr')){
-        document.querySelector('.S-mcP').style.background = barColor;
-        document.querySelector('._lz6s').style.background = barColor;
-        document.querySelector('.Igw0E.IwRSH.eGOV_._4EzTm').style.background = backColor;
+        try{
+            document.querySelector('.S-mcP').style.background = barColor;
+            document.querySelector('._lz6s').style.background = barColor;
+            document.querySelector('.Igw0E.IwRSH.eGOV_._4EzTm').style.background = backColor;
+        }catch{}
     }
     else if (document.querySelector('._lz6s') && document.querySelector('.SCxLW.o64aR ')){
-        document.querySelector('.SCxLW.o64aR ').style.background = backColor;
-        document.querySelector('._lz6s').style.background = barColor;
+        try{
+            document.querySelector('.SCxLW.o64aR ').style.background = backColor;
+            document.querySelector('._lz6s').style.background = barColor;
+        }catch{}
     }
 },500);
 }
