@@ -8,10 +8,10 @@ const languages = styles.languages;
 chrome.runtime.sendMessage({subject: "getvars"}, (res) => 
 {
     // Callback with the response
-    main(res.checker, res.color, res.backcolor, res.unmute);
+    main(res.checker, res.color, res.backcolor, res.unmute, res.checkprivate);
 })
 
-function main(sens,barColor, backColor, unmute){
+function main(sens, barColor, backColor, unmute, checkprivate){
     setInterval(function()
     {
         if ((window.location.href.includes('/stories/') || window.location.href.includes('/p/'))){
@@ -48,7 +48,7 @@ function main(sens,barColor, backColor, unmute){
             }, 150);
             
         }
-        else if (window.location.href.startsWith('https://www.instagram.com/') && (window.location.href.length > 'https://www.instagram.com/'.length) && document.querySelector(".-nal3"))
+        else if (window.location.href.startsWith('https://www.instagram.com/') && (window.location.href.length > 'https://www.instagram.com/'.length) && document.querySelector(".-nal3") && checkprivate)
         {
             if (!document.querySelector(".-nal3").innerHTML.startsWith("<span style=")){
                 const profileEl = document.querySelector(".-nal3");

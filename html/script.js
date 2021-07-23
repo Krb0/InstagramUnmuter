@@ -1,47 +1,38 @@
 const checkBox = document.getElementById('autoAccept');
 const checkBoxMute = document.getElementById('autoUnmute');
+const privateBtn = document.getElementById('checkPrivate');
 const colorInput = document.getElementById('colorInput');
 const bgColor = document.getElementById('bgColor');
 const randColor = document.getElementById('colorBtn');
-
 // Sensible Check & Set
 
 chrome.storage.sync.get('check', function(r) {
-    if (r.check == false){
-        checkBox.checked = false; 
-    }
-    else{
-        checkBox.checked = true; 
-    }
+    checkBox.checked = r.check; 
 });
 
 checkBox.addEventListener('change', (e)=>{
-    if (e.target.checked == false){
-        chrome.storage.sync.set({'check': false});
-    }
-    else{
-        chrome.storage.sync.set({'check': true});
-    }
+    chrome.storage.sync.set({'check': e.target.checked});
 });
 
 // Auto Unmute Check & Set
 
 chrome.storage.sync.get('unmute', function(r) {
-    if (r.unmute == false){
-        checkBoxMute.checked = false; 
-    }
-    else{
-        checkBoxMute.checked = true; 
-    }
+    checkBoxMute.checked = r.unmute; 
 });
 
 checkBoxMute.addEventListener('change', (e)=>{
-    if (e.target.checked == false){
-        chrome.storage.sync.set({'unmute': false});
-    }
-    else{
-        chrome.storage.sync.set({'unmute': true});
-    }
+    chrome.storage.sync.set({'unmute': e.target.checked});
+});
+
+// Profile Type Check
+
+chrome.storage.sync.get('private', function(r) {
+    privateBtn.checked = r.private; 
+});
+
+privateBtn.addEventListener('change', (e)=>{
+    chrome.storage.sync.set({'private':  e.target.checked});
+
 });
 
 // Main Bar Color Check & Set
