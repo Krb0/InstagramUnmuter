@@ -49,8 +49,9 @@ function main(sens, barColor, backColor, unmute, checkprivate){
             
         }
         else if (window.location.href.startsWith('https://www.instagram.com/') && (window.location.href.length > 'https://www.instagram.com/'.length) && document.querySelector(".-nal3") && checkprivate)
-        {
-            if (!document.querySelector(".-nal3").innerHTML.startsWith("<span style=")){
+        {   
+            // Checks if the style has already been applied.
+            if (!document.querySelector(".-nal3").innerHTML.startsWith("<span style=") && document.querySelector(".glyphsSpriteFriend_Follow.u-__7")){
                 const profileEl = document.querySelector(".-nal3");
                 document.querySelector(".glyphsSpriteFriend_Follow.u-__7").click();
                 if(document.querySelector("._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv").innerText.endsWith(`@${document.querySelector("._7UhW9.fKFbl.yUEEX.KV-D4.fDxYl").innerText}.`))
