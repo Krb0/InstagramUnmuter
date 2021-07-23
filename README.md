@@ -16,11 +16,11 @@ Now it just became a chrome extension where I practice and add new ideas.
 		🎯 Auto-Skip Sensible Content Warning.
 
 		🎉 Auto-Unmute Stories and Posts.
+		
+		🔐 Option to see if an Instagram profile is Public or Private.
     
     
     Upcoming Features:
         
        🔒 Save Multiple Background and Nav Colors. 
-       
-       🔐 Option to see if an Instagram profile is Public or Private. 
-       
+      
