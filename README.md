@@ -7,7 +7,7 @@ It's an Chrome extension created because I got sick of having to unmute every st
 It started being just a simple script that unmutes stories, but because of it having a good feedback when I posted it on <a href="https://greasyfork.org/es/scripts/417788-instagram-story-unmute-instagram-stories-unmuter-muted-instagram-story">Greasy Fork</a> I decided to code the extension. 
 
 Now it just became a chrome extension where I practice and add new ideas.
-
+### ⛔ This is a chrome extension, It only works for Chromium  based web browsers such as Brave, Opera/GX and Google Chrome.
 
 	Already Added Features for Instagram:
 
@@ -16,11 +16,18 @@ Now it just became a chrome extension where I practice and add new ideas.
 		🎯 Auto-Skip Sensible Content Warning.
 
 		🎉 Auto-Unmute Stories and Posts.
+		
+		🔐 Option to see if an Instagram profile is Public or Private.
     
     
     Upcoming Features:
         
        🔒 Save Multiple Background and Nav Colors. 
-       
-       🔐 Option to see if an Instagram profile is Public or Private. 
-       
+
+## Installation Process
+- Navigate to chrome://extensions.
+- Enable Developer Mode.
+- Click on load Unzipped Extension and Select it.
+- Once It's installed, <a href="https://www.chromestory.com/2019/05/pinned-extensions/" target="_blank">pin the extension</a> to start customizing the app.
+<br>
+Collaborations and Ideas are well received 
