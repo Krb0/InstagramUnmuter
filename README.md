@@ -7,7 +7,7 @@ It's an Chrome extension created because I got sick of having to unmute every st
 It started being just a simple script that unmutes stories, but because of it having a good feedback when I posted it on <a href="https://greasyfork.org/es/scripts/417788-instagram-story-unmute-instagram-stories-unmuter-muted-instagram-story">Greasy Fork</a> I decided to code the extension. 
 
 Now it just became a chrome extension where I practice and add new ideas.
-
+### ⛔ This is a chrome extension, It only works for Chromium  based web browsers such as Brave, Opera/GX and Google Chrome.
 
 	Already Added Features for Instagram:
 
@@ -23,4 +23,10 @@ Now it just became a chrome extension where I practice and add new ideas.
     Upcoming Features:
         
        🔒 Save Multiple Background and Nav Colors. 
-      
+
+## Installation Process
+- Navigate to chrome://extensions.
+- Enable Developer Mode.
+- Click on load Unzipped Extension and Select it.
+<br>
+Collaborations and Ideas are well received 
