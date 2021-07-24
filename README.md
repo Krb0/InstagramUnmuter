@@ -24,7 +24,7 @@ Now it just became a chrome extension where I practice and add new ideas.
         
        🔒 Save Multiple Background and Nav Colors. 
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/jA2Cajg" ><a href="//imgur.com/a/jA2Cajg" onclick="return ! window.open(this.href);">Preview</a>.</blockquote>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/jA2Cajg" ><a href="//imgur.com/a/jA2Cajg" target="_blank">Preview</a>.</blockquote>
 
 ## Installation Process
 - Navigate to chrome://extensions.
