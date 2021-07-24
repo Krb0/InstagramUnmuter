@@ -45,6 +45,10 @@ label{
     text-align: center;
     margin-bottom: 1.3rem;
 }
+.title h1{
+    font-weight: 800;
+    user-select: none;
+}
 .input-color {
     -webkit-appearance: none;
     padding: 0;
