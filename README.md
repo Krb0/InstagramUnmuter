@@ -24,10 +24,13 @@ Now it just became a chrome extension where I practice and add new ideas.
         
        🔒 Save Multiple Background and Nav Colors. 
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/jA2Cajg" ><a href="//imgur.com/a/jA2Cajg" target="_blank">Preview</a>.</blockquote>
+
 ## Installation Process
 - Navigate to chrome://extensions.
 - Enable Developer Mode.
 - Click on load Unzipped Extension and Select it.
 - Once It's installed, <a href="https://www.chromestory.com/2019/05/pinned-extensions/" target="_blank">pin the extension</a> to start customizing the app.
 <br>
+Logo from <a target="_blank" href="https://www.flaticon.com">FlatIcon</a>.<br>
 Collaborations and Ideas are well received 
