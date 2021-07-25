@@ -76,7 +76,8 @@ function profileCheck(){
     {
         const profileEl = document.querySelector(".-nal3");
         document.querySelector(".glyphsSpriteFriend_Follow.u-__7").click();
-        if(document.querySelector("._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv").innerText.endsWith(`@${document.querySelector("._7UhW9.fKFbl.yUEEX.KV-D4.fDxYl").innerText}.`))
+        const unfollowAlert = document.querySelector("._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv").innerText;
+        if(!unfollowAlert.includes("?") && !unfollowAlert.includes("՞") && !unfollowAlert.includes("⸮") && !unfollowAlert.includes(";"))
         {
             document.querySelector(".aOOlW.HoLwm").click();
             profileEl.innerHTML = styles.private + profileEl.innerHTML;
