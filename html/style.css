@@ -11,29 +11,28 @@ body{
 h3{
     margin-top: 0.8rem;
 }
-input,button,.check{
+input,button,.check, select{
     margin-left: 4rem;
 }
 button{
     background-color: #969696;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin-bottom: 1rem;
+    width: 6rem;
 }
 label{
     margin-left: 0.5rem;
 }
-.main{
-    margin-left: 2rem;
-}
 .flex{
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
 }
 .header{
     background-color: rgb(245, 245, 245);
@@ -66,4 +65,30 @@ label{
     border: none;
     border-radius: 8px;
     padding: 0;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+.left-side{
+    margin-left: 1rem;
+    padding-right: 1rem;
+}
+.right-side{
+    width: 30%;
+    border-left: 1px solid rgb(80, 80, 80, 0.1);
+    padding-left: 2rem;
+}
+.color-list{
+    margin-left: 4rem;
+}
+.color-input{
+    width: 60%;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+    height: 2.2rem;
+}
+.bg-color{
+    margin-left: 2rem;
 }

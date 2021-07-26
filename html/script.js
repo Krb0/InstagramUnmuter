@@ -4,6 +4,8 @@ const privateBtn = document.getElementById('checkPrivate');
 const colorInput = document.getElementById('colorInput');
 const bgColor = document.getElementById('bgColor');
 const randColor = document.getElementById('colorBtn');
+const colorSaver = document.getElementById('colorInputText');
+const selectorEl = document.getElementById('selector');
 // Sensible Check & Set
 
 chrome.storage.sync.get('check', function(r) {
@@ -60,3 +62,41 @@ randColor.addEventListener('click', (e) => {
     colorInput.dispatchEvent(new Event('change'));
     bgColor.dispatchEvent(new Event('change'));
 } );
+
+chrome.storage.sync.get('saved', res =>{
+    if (res.saved.length >= 1){
+        const data = res.saved;
+        data.forEach(option =>{
+            const newOption = document.createElement('option');
+            newOption.value = option.name;
+            newOption.innerText = option.name;
+            selector.appendChild(newOption);
+        })
+    }
+});
+
+document.querySelector('#saverForm').addEventListener("submit",function(event){
+    event.preventDefault();
+
+    chrome.storage.sync.get("saved", res =>{
+        const newArray = res.saved;
+        newArray.push({'name': colorSaver.value, 'bgcolor': bgColor.value, 'barcolor': colorInput.value});
+        chrome.storage.sync.set({'saved': newArray});
+    });
+
+})
+document.querySelector('#savedColorSet').addEventListener('click', e =>{
+    chrome.storage.sync.get('saved', res =>{
+        let colorName = selector.value;
+        res.saved.forEach( colorSaved =>{
+            if (colorSaved.name == colorName){
+                bgColor.value = colorSaved.bgcolor;
+                colorInput.value = colorSaved.barcolor;
+                [bgColor, colorInput].forEach(item =>{
+                    item.dispatchEvent(new Event('change'));
+                });
+            }
+        });
+    })
+     
+});

@@ -8,41 +8,71 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="title">
             <h1>Instagram Manager Extension</h2>
         </div>
         <hr>
-    </div>
-    <div class="main">
-        <div class="options flex">
+    </header>
+    <main>
+        <div class="left-side">
+            <div class="options flex">
+                <div>
+                    <h3>Sensible Content Warning</h3>
+                    <div class="flex">
+                        <input type="checkbox" name="accept" id="autoAccept" class="check" checked>
+                        <label for="accept">Auto Accept Sensible Content Warning?</label>
+                    </div>
+                    <h3>Unmute Stories & Posts</h3>
+                    <div class="flex">
+                        <input type="checkbox" name="mute" id="autoUnmute" class="check" checked>
+                        <label for="MUTE">Auto Unmute Posts & Stories?</label>
+                    </div>
+                    <h3>Profile Public/Private Checker</h3>
+                    <div class="flex">
+                        <input type="checkbox" name="private" id="checkPrivate" class="check" checked>
+                        <label for="private">Show if a profile is Public or Private?</label>
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <h3>Main Bar Color</h3>
+                            <input class="input-color" type="color" id="colorInput">
+                        </div>
+                        <div class="bg-color">
+                            <h3>Background Color</h3>
+                            <input class="input-color" type="color" id="bgColor">
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="right-side">
             <div>
-                <h3>Sensible Content Warning</h3>
-                <div class="flex">
-                    <input type="checkbox" name="accept" id="autoAccept" class="check" checked>
-                    <label for="accept">Auto Accept Sensible Content Warning?</label>
-                </div>
-                <h3>Unmute Stories & Posts</h3>
-                <div class="flex">
-                    <input type="checkbox" name="mute" id="autoUnmute" class="check" checked>
-                    <label for="MUTE">Auto Unmute Posts & Stories?</label>
-                </div>
-                <h3>Profile Public/Private Checker</h3>
-                <div class="flex">
-                    <input type="checkbox" name="private" id="checkPrivate" class="check" checked>
-                    <label for="private">Show if a profile is Public or Private?</label>
-                </div>
-                <h3>Main Bar Color</h3>
-                <input class="input-color" type="color" id="colorInput">
-                <h3>Background Color</h3>
-                <input class="input-color" type="color" id="bgColor">
                 <h3>Random Colors</h3>
                 <button id="colorBtn">Reset</button>
             </div>
             
+            <div class="saver-section">
+                <h3>Save Colors</h3>
+                <form id="saverForm" >
+                    <input class="color-input" id="colorInputText" type="text" required>
+                    <button type="submit" preventDefault>Save</button>
+                </form>
+                
+            </div>
+            <div class="saved-section">
+                <h3>Saved Colors</h3>
+                <select id="selector" name="select" class="color-input color-list">
+                    <option value="value1" selected>--------</option>
+                </select>
+                <button id="savedColorSet" type="submit" >Set</button>
+            </div>
+
             
         </div>
-    </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
