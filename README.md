@@ -18,9 +18,8 @@ Now it just became a chrome extension where I practice and add new ideas.
 		🎉 Auto-Unmute Stories and Posts.
 		
 		🔐 Option to see if an Instagram profile is Public or Private.
-    
-    		🔐 Profiles with colors saved by client.
-
+		
+		🔐 Presets with colors saved by client.
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/jA2Cajg" ><a href="//imgur.com/a/jA2Cajg" target="_blank">Preview</a>.</blockquote>
 
