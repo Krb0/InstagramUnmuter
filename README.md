@@ -19,7 +19,7 @@ Now it just became a chrome extension where I practice and add new ideas.
 		
 		🔐 Option to see if an Instagram profile is Public or Private.
     
-    
+    		🔐 Profiles with colors saved by client.
     Upcoming Features:
         
        🔒 Save Multiple Background and Nav Colors. 
