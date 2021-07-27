@@ -21,7 +21,7 @@ Now it just became a chrome extension where I practice and add new ideas.
 		
 		🔐 Presets with colors saved by client.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/jA2Cajg" ><a href="//imgur.com/a/jA2Cajg" target="_blank">Preview</a>.</blockquote>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/3iORjmJ" ><a href="https://imgur.com/a/3iORjmJ" target="_blank">Preview</a>.</blockquote>
 
 ## Installation Process
 - Navigate to chrome://extensions.
