@@ -6,6 +6,9 @@ const bgColor = document.getElementById('bgColor');
 const randColor = document.getElementById('colorBtn');
 const colorSaver = document.getElementById('colorInputText');
 const selectorEl = document.getElementById('selector');
+const removeBtn = document.getElementById('removeProf');
+
+
 // Sensible Check & Set
 
 chrome.storage.sync.get('check', function(r) {
@@ -63,6 +66,9 @@ randColor.addEventListener('click', (e) => {
     bgColor.dispatchEvent(new Event('change'));
 } );
 
+
+// Saved Color Profile Section
+
 chrome.storage.sync.get('saved', res =>{
     if (res.saved.length >= 1){
         const data = res.saved;
@@ -80,11 +86,28 @@ document.querySelector('#saverForm').addEventListener("submit",function(event){
 
     chrome.storage.sync.get("saved", res =>{
         const newArray = res.saved;
-        newArray.push({'name': colorSaver.value, 'bgcolor': bgColor.value, 'barcolor': colorInput.value});
-        chrome.storage.sync.set({'saved': newArray});
-    });
+        let counter = 0;
 
+        newArray.forEach(i =>{
+            if( i.name.toLowerCase() == colorSaver.value.toLowerCase()){
+                counter++;
+            }
+        })
+        if (counter > 0){
+            alert('¡Profile Color Already Exists!')
+        }
+        else{
+            newArray.push({'name': colorSaver.value, 'bgcolor': bgColor.value, 'barcolor': colorInput.value});
+            chrome.storage.sync.set({'saved': newArray});
+
+            const newOption = document.createElement('option');
+            newOption.value = colorSaver.value;
+            newOption.innerText = colorSaver.value;
+            selector.appendChild(newOption);
+        }
+    });
 })
+
 document.querySelector('#savedColorSet').addEventListener('click', e =>{
     chrome.storage.sync.get('saved', res =>{
         let colorName = selector.value;
@@ -98,5 +121,20 @@ document.querySelector('#savedColorSet').addEventListener('click', e =>{
             }
         });
     })
-     
 });
+
+removeBtn.addEventListener('click', () =>{
+    if(selectorEl.value != 'value1'){
+        chrome.storage.sync.get("saved", res =>{
+            const newArray = res.saved;
+            newArray.forEach( (arr,i) => {
+                if (arr.name == selectorEl.value){
+                    newArray.splice(i,1);
+                    chrome.storage.sync.set({'saved': newArray});
+                    selectorEl.options[selectorEl.selectedIndex].remove();
+                }
+            })
+            
+        });
+    }
+})

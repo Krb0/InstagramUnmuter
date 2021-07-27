@@ -76,7 +76,7 @@ main{
     padding-right: 1rem;
 }
 .right-side{
-    width: 30%;
+    width: 35%;
     border-left: 1px solid rgb(80, 80, 80, 0.1);
     padding-left: 2rem;
 }
@@ -91,4 +91,14 @@ main{
 }
 .bg-color{
     margin-left: 2rem;
+}
+.selector-section{
+    display: flex;
+    flex-direction: row;
+}
+.selector-section button{
+    margin-left: 0.1rem;
+    width: 2rem;
+    text-align: center;
+    padding:0;
 }
