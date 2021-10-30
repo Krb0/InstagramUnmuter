@@ -105,7 +105,7 @@ document.querySelector('#saverForm').addEventListener("submit",function(event){
             newOption.innerText = colorSaver.value;
             selector.appendChild(newOption);
         }
-    });
+    })
 })
 
 document.querySelector('#savedColorSet').addEventListener('click', e =>{
