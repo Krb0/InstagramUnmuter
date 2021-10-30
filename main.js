@@ -26,7 +26,7 @@ function main(sens, barColor, backColor, unmute, checkprivate) {
               '._8-yf5 > path[d^="M1.5 13.3c-.8 0-1.5.7-1.5 1.5v18.4c0 .8.7 1.5 1.5 1.5h8.7l12.9"]'
             )[0]
           ) {
-            document.querySelectorAll(".QBdPU")[1].click();
+            document.querySelectorAll(".wpO6b")[1].click();
           }
         }
         // If it has a Sensitive Content Warning and client has enabled the skip warning feature..
