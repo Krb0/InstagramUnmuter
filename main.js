@@ -26,7 +26,14 @@ function main(sens, barColor, backColor, unmute, checkprivate) {
               '._8-yf5 > path[d^="M1.5 13.3c-.8 0-1.5.7-1.5 1.5v18.4c0 .8.7 1.5 1.5 1.5h8.7l12.9"]'
             )[0]
           ) {
-            document.querySelectorAll(".wpO6b")[1].click();
+            const postValidator = document.querySelector(
+              ".qF0y9.Igw0E.IwRSH.eGOV_._4EzTm.O1flK.fm1AK.TxciK>.sqdOP.yWX7d.y3zKF[type=button]"
+            );
+            const storyValidator = document.querySelector(
+              ".qF0y9.Igw0E.rBNOH.CcYR1.ybXk5._4EzTm>._8p8kF>.wpO6b[aria-label]"
+            );
+            if (postValidator) postValidator.click();
+            else if (storyValidator) storyValidator.click();
           }
         }
         // If it has a Sensitive Content Warning and client has enabled the skip warning feature..
