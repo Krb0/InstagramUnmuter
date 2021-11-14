@@ -31,3 +31,6 @@ Now it just became a chrome extension where I practice and add new ideas.
 <br>
 Logo from <a target="_blank" href="https://www.flaticon.com">FlatIcon</a>.<br>
 Collaborations and Ideas are well received 
+
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=InstagramUnmuter)
+
